@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: REST_RegistrarionMail
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/registration_mail_db
+    username: Kirill
+    password: 191919
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: create
+
+  mail:
+    host: smtp.yandex.ru
+    port: 465
+    username:
+    password:
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.ssl.enable: true
+      mail.smtp.ssl.trust: smtp.yandex.ru
+      mail.smtp.starttls.enable : false
+      mail.debug: true
+
+
